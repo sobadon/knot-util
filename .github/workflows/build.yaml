@@ -29,7 +29,7 @@ jobs:
         with:
           images: ghcr.io/${{ github.repository }}
           tags: |
-            type=sha,prefix=sha-{{date 'YYYYMMDD'}},format=short
+            type=sha,prefix=sha-{{date 'YYYYMMDD'}}-,format=short
 
       - uses: docker/build-push-action@v4
         with:
