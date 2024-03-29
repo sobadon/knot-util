@@ -7,6 +7,10 @@ on:
       - "Dockerfile"
       - ".github/workflows/*"
 
+permissions:
+  contents: read
+  packages: write
+
 jobs:
   docker:
     runs-on: ubuntu-latest
